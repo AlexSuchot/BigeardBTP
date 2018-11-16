@@ -2,14 +2,21 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-.description {
+.global-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.global-container .description {
   background: url("../img/background.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,7 +34,7 @@ html, body {
   color: white;
 }
 
-.description .text {
+.global-container .description .text {
   background-color: rgba(66, 66, 66, 0.15);
   width: 450px;
   height: 300px;
@@ -46,5 +53,63 @@ html, body {
           flex-direction: column;
   text-align: center;
   padding: 20px;
+}
+
+.global-container .service {
+  width: 100%;
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #555555;
+}
+
+.global-container .service h2 {
+  margin: 60px 0 4% 0;
+}
+
+.global-container .service .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.global-container .service .info .content {
+  margin: 20px;
+}
+
+.global-container .service .info .content button {
+  background-color: transparent;
+  border: 1px solid #555555;
+  color: #555555;
+  padding: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.global-container .service .info .content button:hover {
+  background-color: #555555;
+  border: 1px solid #555555;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
