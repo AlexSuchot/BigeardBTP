@@ -177,6 +177,10 @@ body {
         flex-direction: column;
         align-items: center;
 
+        h2 {
+            margin-bottom: 50px;
+        }
+
         form {
             width: 100%;
             display: flex;
@@ -184,8 +188,8 @@ body {
             align-items: center;
 
             div {
-                width: 80%;
-                margin-bottom: 25px;
+                width: 81%;
+                margin-bottom: 50px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -208,7 +212,7 @@ body {
             input[type=email] {
                 width: 80%;
                 padding: 10px 0px 10px 10px;
-                margin-bottom: 25px;
+                margin-bottom: 50px;
                 border: none;
                 background-color: rgb(85, 85, 85);
                 font-size: 1em;
@@ -222,7 +226,7 @@ body {
             textarea {
                 width: 80%;
                 padding: 10px 0px 10px 10px;
-                margin-bottom: 50px;
+                margin-bottom: 100px;
                 height: 200px;
                 border: none;
                 background-color: rgb(85, 85, 85);
@@ -236,7 +240,7 @@ body {
 
             input[type=submit] {
                 width: 25%;
-                margin-bottom: 25px;
+                margin-bottom: 50px;
                 padding: 10px;
                 background-color: transparent;
                 border: 1px solid rgb(85, 85, 85);

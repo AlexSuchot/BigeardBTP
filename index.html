@@ -64,13 +64,13 @@
     </div>
     <div class="form">
         <h2>Nous contacter</h2>
-        <form action="" method="post">
+        <form name="form" action="mail.php" method="post" onsubmit="return validateForm()">
             <div>
-                <input type="text" name="firstname" placeholder="Prénom">
-                <input type="text" name="lastname" placeholder="Nom">
+                <input id="firstname" type="text" name="firstname" placeholder="Prénom" required>
+                <input id="lastname" type="text" name="lastname" placeholder="Nom" required>
             </div>
-            <input type="email" name="email" placeholder="Email">
-            <textarea name="message" placeholder="Votre message"></textarea>
+            <input id="email" type="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
             <input type="submit" value="Envoyer">
         </form>
     </div>

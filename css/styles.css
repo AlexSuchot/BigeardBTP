@@ -244,6 +244,10 @@ body {
           align-items: center;
 }
 
+.global-container .form h2 {
+  margin-bottom: 50px;
+}
+
 .global-container .form form {
   width: 100%;
   display: -webkit-box;
@@ -259,8 +263,8 @@ body {
 }
 
 .global-container .form form div {
-  width: 80%;
-  margin-bottom: 25px;
+  width: 81%;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,7 +305,7 @@ body {
 .global-container .form form input[type=email] {
   width: 80%;
   padding: 10px 0px 10px 10px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   border: none;
   background-color: #555555;
   font-size: 1em;
@@ -327,7 +331,7 @@ body {
 .global-container .form form textarea {
   width: 80%;
   padding: 10px 0px 10px 10px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   height: 200px;
   border: none;
   background-color: #555555;
@@ -353,7 +357,7 @@ body {
 
 .global-container .form form input[type=submit] {
   width: 25%;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   padding: 10px;
   background-color: transparent;
   border: 1px solid #555555;
