@@ -72,7 +72,7 @@
               background: #f9f9f9;
               color: #252525;
               font-size: 1em;
-              width: 13vw; }
+              width: auto; }
               @media screen and (max-width: 1060px) {
                 * html .global-container .header-container .header-background .header-navbar a, * body .global-container .header-container .header-background .header-navbar a {
                   font-size: 0.7em;
