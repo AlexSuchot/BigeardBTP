@@ -15,27 +15,35 @@
     .global-container {
       width: 100%;
 
+      /* BLOC HEADER : */
       .header-container {
         display: flex;
         width: auto;
         height: 150px;
 
         img {
-          flex: 1;
+          flex: 0.5;
           height: 100%;
 
           @media screen and (max-width: 820px) {
             display: none;
           }
         }
+        /* BACKGROUND HEADER : */
         .header-background {
           flex: 5;
-          background-image: url("../src/bg-header.jpg");
+          background-color: #0a4769;
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
           opacity: 0.7;
           display: flex;
+
+          @media screen and (max-width: 820px) {
+            flex-direction: row-reverse;
+          }
+
+          /* TITLE : */
           h1 {
             font-size: 3em;
             margin-left: 15px;
@@ -49,10 +57,10 @@
             margin-right: 0;
             margin-left: 40px;
             margin-top: auto;
-
             flex-direction: row;
             justify-content: space-between;
             display: flex;
+
 
             a.icon {
               display: none;
@@ -63,6 +71,8 @@
                 display: block;
                 color: black;
                 font-size: 25px;
+                margin-top:0;
+                margin-bottom: auto;
 
               }
             }
@@ -70,17 +80,19 @@
             a {
               text-decoration: none;
               padding-top: 10px;
-              padding-left: 10px;
-              padding-right: 10px;
+              padding-left: 2vw;
+              padding-right: 2vw;
               padding-bottom: auto;
               text-align: center;
               line-height: 40px;
               background: #f9f9f9;
               color: #252525;
-              font-size: 1.2em;
+              font-size: 1em;
+              width: 13vw;
+
 
               @media screen and (max-width: 1060px) {
-                font-size: 0.8em;
+                font-size: 0.7em;
                 line-height: 20px;
               }
               @media screen and (max-width: 820px) {
@@ -94,7 +106,6 @@
             .header-contact-button {
               flex-direction: column;
             }
-
           }
           .responsiveNavbar {
             @media screen and (max-width: 820px) {
@@ -109,6 +120,14 @@
               vertical-align: center;
               align-items: center;
               justify-content: center;
+
+            }
+            a.icon {
+              float: right !important;
+              margin-top: 5%;
+              display: block;
+              color: black;
+              font-size: 25px;
 
             }
           }
