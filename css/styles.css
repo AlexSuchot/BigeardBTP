@@ -122,7 +122,7 @@ body {
         width: 100%; }
   .global-container .about {
     display: flex;
-    margin-top: 5%; }
+    margin-bottom: 5%; }
     .global-container .about .desc {
       flex: 1; }
       @media screen and (max-width: 1200px) {
@@ -146,6 +146,7 @@ body {
     .global-container .about img {
       flex: 1;
       width: 25%;
-      height: 25%; }
+      height: 25%;
+      margin: auto; }
 
 /*# sourceMappingURL=styles.css.map */
