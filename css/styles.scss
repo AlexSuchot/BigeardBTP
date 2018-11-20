@@ -197,6 +197,13 @@ body {
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
         div {
             z-index: 1;
             opacity: 1;
@@ -209,6 +216,11 @@ body {
             transform: translateX(125%);
             opacity: .7;
 
+            @media screen and (max-width: 700px) {
+                width: 50%;
+                transform: translateY(125%);
+            }
+
             img {
                 width: 100%;
             }
@@ -219,6 +231,11 @@ body {
             width: 600px;
             transform: translateX(50%);
 
+            @media screen and (max-width: 700px) {
+                width: 75%;
+                transform: translateY(50%);
+            }
+
             img {
                 width: 100%;
             }
@@ -226,7 +243,11 @@ body {
 
         #selected {
             z-index: 10;
-            width: 1600px;
+            width: 800px;
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
+            }
 
             img {
                 width: 100%;
@@ -238,6 +259,11 @@ body {
             width: 600px;
             transform: translateX(-50%);
 
+            @media screen and (max-width: 700px) {
+                width: 75%;
+                transform: translateY(-50%);
+            }
+
             img {
                 width: 100%;
             }
@@ -248,6 +274,11 @@ body {
             width: 400px;
             transform: translateX(-125%);
             opacity: .7;
+
+            @media screen and (max-width: 700px) {
+                width: 50%;
+                transform: translateY(-125%);
+            }
 
             img {
                 width: 100%;
