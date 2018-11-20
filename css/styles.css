@@ -10,6 +10,110 @@ body {
   margin: 0;
 }
 
+/* BLOC HEADER : */
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  margin: 0 0 40px 0;
+  background-color: #0a4769;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* BACKGROUND HEADER : */
+.header-background {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* TITLE : */
+}
+
+.header-background h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.header-background .header-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header-background .header-navbar a.icon {
+  display: none;
+}
+
+@media screen and (max-width: 820px) {
+  .header-background .header-navbar a.icon {
+    float: right;
+    margin-top: 5%;
+    display: block;
+    color: black;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: auto;
+  }
+}
+
+.header-background .header-navbar a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  background: #f9f9f9;
+  color: #252525;
+}
+
+.header-background .header-navbar a:hover {
+  color: #f9f9f9;
+  background: #252525;
+}
+
+.header-background .responsiveNavbar a {
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-background .responsiveNavbar a.icon {
+  float: right !important;
+  margin-top: 5%;
+  display: block;
+  color: black;
+  font-size: 25px;
+}
+
 .global-container {
   display: block;
   margin: 0 auto;
@@ -21,7 +125,7 @@ body {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 50vh;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,7 +255,7 @@ body {
 }
 
 .global-container .carousel {
-  height: 50vh;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
