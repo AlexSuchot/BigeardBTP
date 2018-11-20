@@ -123,6 +123,9 @@ body {
   .global-container .about {
     display: flex;
     margin-bottom: 5%; }
+    @media screen and (max-width: 700px) {
+      .global-container .about {
+        flex-direction: column; } }
     .global-container .about .desc {
       flex: 1; }
       @media screen and (max-width: 1200px) {
@@ -148,5 +151,9 @@ body {
       width: 25%;
       height: 25%;
       margin: auto; }
+      @media screen and (max-width: 700px) {
+        .global-container .about img {
+          width: 75%;
+          height: 75%; } }
 
 /*# sourceMappingURL=styles.css.map */
