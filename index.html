@@ -15,22 +15,29 @@
 <body>
     <!-- HEADER : -->
     <header>
-        <div class="header-container">
+        <div class="header">
+            <div class="header-container">
+                <div class="header-block">
+                    <img class="bigeard" src="img/SOLDATBIGEARD.png" alt="Bigeard">
+                    <div class="nav">
+                        <div>
+                            <h1>
+                                Bigeard BTP & CO
+                            </h1>
 
-            <div class="header-background">
-                <img class="bigeard" src="/img/SOLDATBIGEARD.png" alt="Bigeard">
-                <div>
-                    <h1>
-                        Bigeard BTP & CO
-                    </h1>
-                    <div class="header-navbar" id="topNav">
-                        <a href="">Nos réalisations</a>
-                        <a href="">Nos maisons</a>
-                        <a href="">Extension & rénovation</a>
-                        <a class="header-contact-button" href="">CONTACTEZ NOUS !!!!</a>
-                        <a onclick="burgerMenu()" class="icon">
+                        </div>
+                        <a href="javascript:void(0);" id="icon" onclick="clickMenu()">
                             <i class="fa fa-bars"></i>
                         </a>
+                        <div class="menu">
+                            <ul id="items-menu">
+                                <li><a class="active" href="">Nos réalisations</a></li>
+                                <li><a href="">Nos maisons</a></li>
+                                <li><a href="">Extension & rénovation</a></li>
+                                <li><a href="">CONTACTEZ NOUS !!!!</a></li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>

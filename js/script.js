@@ -19,7 +19,41 @@ function onMove(n) {
         }
     }
 }
-function burgerMenu() {
-    var element = document.getElementById("topNav");
-    element.classList.toggle("responsiveNavbar");
+
+
+
+var x = document.getElementById("items-menu");
+var i = document.getElementById("icon");
+
+window.onresize = function () {
+    detectSize();
+};
+
+window.onload = function () {
+    detectSize();
+};
+
+function detectSize() {
+
+    if (window.innerWidth <= 1038) {
+        mobile = true;
+        x.style.display = "none";
+        i.style.display = "block";
+        i.style.transform = "rotate(180deg)"
+    } else {
+        mobile = false;
+        i.style.display = "none";
+        x.style.display = "flex";
+    }
+}
+
+function clickMenu() {
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        i.style.transform = "rotate(180deg)";
+    } else {
+        x.style.display = "block";
+        x.style.opacity = "1";
+        i.style.transform = "rotate(90deg)";
+    }
 }
