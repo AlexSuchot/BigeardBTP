@@ -64,13 +64,27 @@
     </div>
     <div class="form">
         <h2>Nous contacter</h2>
-        <form name="form" action="mail.php" method="post" onsubmit="return validateForm()">
+        <form name="form" onsubmit="return validateForm()" action="mail.php" method="post">
             <div>
                 <input id="firstname" type="text" name="firstname" placeholder="Prénom" required>
                 <input id="lastname" type="text" name="lastname" placeholder="Nom" required>
             </div>
+            <div>
+                <div class="alert" id="fn-alert">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="alert" id="ln-alert">
+                    <i class="far fa-times-circle"></i>
+                </div>
+            </div>
             <input id="email" type="email" name="email" placeholder="Email" required>
+            <div class="alert" id="email-alert">
+                <i class="far fa-times-circle"></i>
+            </div>
             <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            <div class="alert" id="msg-alert">
+                <i class="far fa-times-circle"></i>
+            </div>
             <input type="submit" value="Envoyer">
         </form>
     </div>
@@ -78,8 +92,6 @@
 
 <body>
     <script src="js/script.js"></script>
-
-
 </body>
 
 </html>

@@ -189,7 +189,7 @@ body {
 
             div {
                 width: 81%;
-                margin-bottom: 50px;
+                margin-bottom: 10px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -207,12 +207,42 @@ body {
                     }
                 }
 
+                div.alert {
+                    width: 45%;
+                    margin: 0px;
+                }
+
+            }
+
+            i {
+                margin-right: 10px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            div.alert {
+                visibility: hidden;
+                width: 80%;
+                margin-bottom: 10px;
+                padding: 10px 0px 10px 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: red;
+                font-size: 1em;
+                color: #ffffff;
+
+                p {
+                    margin: 0px;
+                    padding: 0px;
+                }
             }
 
             input[type=email] {
                 width: 80%;
                 padding: 10px 0px 10px 10px;
-                margin-bottom: 50px;
+                margin-bottom: 10px;
                 border: none;
                 background-color: rgb(85, 85, 85);
                 font-size: 1em;
@@ -226,7 +256,7 @@ body {
             textarea {
                 width: 80%;
                 padding: 10px 0px 10px 10px;
-                margin-bottom: 100px;
+                margin-bottom: 10px;
                 height: 200px;
                 border: none;
                 background-color: rgb(85, 85, 85);

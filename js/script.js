@@ -24,48 +24,70 @@ function validateForm() {
     var hasDigit = /\d/g;
     var hasSpace = /\s/;
     var hasSpecial = /[-\/\\&,@!:;~"#_`²$£€%µ%¨§*+=?.,<>()|[\]{}]/g;
+
     var fn = document.form.firstname;
+    var ln = document.form.lastname;
+    var em = document.form.email;
+
+    var fnAlert = document.getElementById("fn-alert");
+    var lnAlert = document.getElementById("ln-alert");
+    var emailAlert = document.getElementById("email-alert");
+
     if (hasDigit.test(fn.value)) {
-        alert("Nombre dans prénom");
+        fnAlert.style.visibility = "visible";
+        fnAlert.firstChild.textContent = "Nombre dans prénom"
         fn.focus();
         return false;
     }
+
     if (hasSpace.test(fn.value)) {
-        alert("Espace dans prénom");
+        fnAlert.style.visibility = "visible";
+        fnAlert.firstChild.textContent = "Espace dans prénom"
         fn.focus();
         return false;
     }
+
     if (hasSpecial.test(fn.value)) {
-        alert("Caractères spécial dans prénom");
+        fnAlert.style.visibility = "visible";
+        fnAlert.firstChild.textContent = "Caractères spéciaux dans prénom"
         fn.focus();
         return false;
     }
-    var ln = document.form.lastname.value;
+
     if (hasDigit.test(ln.value)) {
-        alert("Nombre dans nom");
-        fn.focus();
+        lnAlert.style.visibility = "visible";
+        lnAlert.firstChild.textContent = "Nombre dans nom"
+        ln.focus();
         return false;
     }
+
     if (hasSpace.test(ln.value)) {
-        alert("Espace dans nom");
-        fn.focus();
+        lnAlert.style.visibility = "visible";
+        lnAlert.firstChild.textContent = "Espace dans nom"
+        ln.focus();
         return false;
     }
+
     if (hasSpecial.test(ln.value)) {
-        alert("Caractères spécial dans prénom");
-        fn.focus();
+        lnAlert.style.visibility = "visible";
+        lnAlert.firstChild.textContent = "Caractères spéciaux dans nom"
+        ln.focus();
         return false;
     }
-    var em = document.form.email.value;
+
     if (hasDigit.test(em.value)) {
-        alert("Nombre dans email");
-        fn.focus();
+        emailAlert.style.visibility = "visible";
+        emailAlert.firstChild.textContent = "Nombre dans email"
+        em.focus();
         return false;
     }
+
     if (hasSpace.test(em.value)) {
-        alert("Espace dans email");
-        fn.focus();
+        emailAlert.style.visibility = "visible";
+        emailAlert.firstChild.textContent = "Espace dans email"
+        em.focus();
         return false;
     }
+
     return true;
 }

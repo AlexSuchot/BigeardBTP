@@ -264,7 +264,7 @@ body {
 
 .global-container .form form div {
   width: 81%;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,10 +302,40 @@ body {
   color: #ffffff;
 }
 
+.global-container .form form div div.alert {
+  width: 45%;
+  margin: 0px;
+}
+
+.global-container .form form i {
+  margin-right: 10px;
+}
+
+.global-container .form form i:hover {
+  cursor: pointer;
+}
+
+.global-container .form form div.alert {
+  visibility: hidden;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px 0px 10px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.global-container .form form div.alert p {
+  margin: 0px;
+  padding: 0px;
+}
+
 .global-container .form form input[type=email] {
   width: 80%;
   padding: 10px 0px 10px 10px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   border: none;
   background-color: #555555;
   font-size: 1em;
@@ -331,7 +361,7 @@ body {
 .global-container .form form textarea {
   width: 80%;
   padding: 10px 0px 10px 10px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   height: 200px;
   border: none;
   background-color: #555555;
