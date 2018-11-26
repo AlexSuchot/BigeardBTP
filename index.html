@@ -71,19 +71,19 @@
             </div>
             <div>
                 <div class="alert" id="fn-alert">
-                    <i class="far fa-times-circle"></i>
+                    <i class="far fa-times-circle" onclick="alertClose(this)"></i>
                 </div>
                 <div class="alert" id="ln-alert">
-                    <i class="far fa-times-circle"></i>
+                    <i class="far fa-times-circle" onclick="alertClose(this)"></i>
                 </div>
             </div>
             <input id="email" type="email" name="email" placeholder="Email" required>
             <div class="alert" id="email-alert">
-                <i class="far fa-times-circle"></i>
+                <i class="far fa-times-circle" onclick="alertClose(this)"></i>
             </div>
             <textarea id="message" name="message" placeholder="Votre message" required></textarea>
             <div class="alert" id="msg-alert">
-                <i class="far fa-times-circle"></i>
+                <i class="far fa-times-circle" onclick="alertClose(this)"></i>
             </div>
             <input type="submit" value="Envoyer">
         </form>

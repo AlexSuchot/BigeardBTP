@@ -91,3 +91,7 @@ function validateForm() {
 
     return true;
 }
+
+function alertClose(elem) {
+    elem.parentNode.style.visibility = "hidden"
+}
