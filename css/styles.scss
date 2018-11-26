@@ -328,4 +328,120 @@ body {
             }
         }
     }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 50px;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div {
+                width: 81%;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                input[type=text] {
+                    width: 45%;
+                    padding: 10px 0px 10px 10px;
+                    border: none;
+                    background-color: rgb(85, 85, 85);
+                    font-size: 1em;
+                    color: #ffffff;
+
+                    &::placeholder {
+                        color: #ffffff;
+                    }
+                }
+
+                div.alert {
+                    width: 45%;
+                    margin: 0px;
+                }
+
+            }
+
+            i {
+                margin-right: 10px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            div.alert {
+                visibility: hidden;
+                width: 80%;
+                margin-bottom: 10px;
+                padding: 10px 0px 10px 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: red;
+                font-size: 1em;
+                color: #ffffff;
+
+                p {
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+
+            input[type=email] {
+                width: 80%;
+                padding: 10px 0px 10px 10px;
+                margin-bottom: 10px;
+                border: none;
+                background-color: rgb(85, 85, 85);
+                font-size: 1em;
+                color: #ffffff;
+
+                &::placeholder {
+                    color: #ffffff;
+                }
+            }
+
+            textarea {
+                width: 80%;
+                padding: 10px 0px 10px 10px;
+                margin-bottom: 10px;
+                height: 200px;
+                border: none;
+                background-color: rgb(85, 85, 85);
+                font-size: 1em;
+                color: #ffffff;
+
+                &::placeholder {
+                    color: #ffffff;
+                }
+            }
+
+            input[type=submit] {
+                width: 25%;
+                margin-bottom: 50px;
+                padding: 10px;
+                background-color: transparent;
+                border: 1px solid rgb(85, 85, 85);
+                color: rgb(85, 85, 85);
+                font-size: 1em;
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: rgb(85, 85, 85);
+                    border: 1px solid rgb(85, 85, 85);
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }

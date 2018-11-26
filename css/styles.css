@@ -467,4 +467,176 @@ body {
 .global-container .carousel #hide-next img {
   width: 100%;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.global-container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.global-container .form h2 {
+  margin-bottom: 50px;
+}
+
+.global-container .form form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.global-container .form form div {
+  width: 81%;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.global-container .form form div input[type=text] {
+  width: 45%;
+  padding: 10px 0px 10px 10px;
+  border: none;
+  background-color: #555555;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.global-container .form form div input[type=text]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form div input[type=text]:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form div input[type=text]::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form div input[type=text]::placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form div div.alert {
+  width: 45%;
+  margin: 0px;
+}
+
+.global-container .form form i {
+  margin-right: 10px;
+}
+
+.global-container .form form i:hover {
+  cursor: pointer;
+}
+
+.global-container .form form div.alert {
+  visibility: hidden;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px 0px 10px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.global-container .form form div.alert p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.global-container .form form input[type=email] {
+  width: 80%;
+  padding: 10px 0px 10px 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #555555;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.global-container .form form input[type=email]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form input[type=email]:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form input[type=email]::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form input[type=email]::placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form textarea {
+  width: 80%;
+  padding: 10px 0px 10px 10px;
+  margin-bottom: 10px;
+  height: 200px;
+  border: none;
+  background-color: #555555;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.global-container .form form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form textarea::placeholder {
+  color: #ffffff;
+}
+
+.global-container .form form input[type=submit] {
+  width: 25%;
+  margin-bottom: 50px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #555555;
+  color: #555555;
+  font-size: 1em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.global-container .form form input[type=submit]:hover {
+  background-color: #555555;
+  border: 1px solid #555555;
+  color: white;
+  cursor: pointer;
+}
