@@ -261,7 +261,8 @@ body {
         width: 100%; }
   .global-container .about {
     display: flex;
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+    margin-top: 5%; }
     @media screen and (max-width: 700px) {
       .global-container .about {
         flex-direction: column; } }
