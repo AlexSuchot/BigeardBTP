@@ -14,7 +14,7 @@ body {
 /* BLOC HEADER : */
 .header {
     margin: 0 0 40px 0;
-    background-color: #759dc9;
+    background-color: #cbcbcb;
     box-shadow: 0px 0px 28px -15px #000;
 
     .header-container {
@@ -46,7 +46,7 @@ body {
             /* TITLE : */
             h1 {
                 font-size: 50px;
-                color: white;
+                color: #727272;
 
                 @media screen and (max-width: 1038px) {
                     text-align: center;
@@ -91,6 +91,14 @@ body {
                             border-bottom: 4px solid #f9f9f9;
                             border-top: 4px solid #f9f9f9;
 
+                            &:hover {
+                                border-bottom: 4px solid #759dc9;
+    
+                                @media screen and (max-width: 1038px) {
+                                    border-bottom: 4px solid white;
+                                }
+                            }
+
                             @media screen and (max-width: 1038px) {
                                 background-color: transparent;
                                 border-bottom: 4px solid transparent;
@@ -99,18 +107,25 @@ body {
                             }
                         }
 
-                        a:hover {
-                            border-bottom: 4px solid #759dc9;
 
-                            @media screen and (max-width: 1038px) {
+
+                        .active {
+                            background-color: #759dc9;
+                            border-color: #759dc9;
+                            color: white;
+
+                            &:hover {
                                 border-bottom: 4px solid white;
                             }
                         }
 
                         @media screen and (max-width: 1038px) {
                             display: none;
+                            margin: 20px 0 0 0;
                         }
                     }
+
+
 
                     @media screen and (max-width: 1038px) {
                         display: flex;
@@ -155,15 +170,15 @@ body {
         color: white;
 
         .text {
-            background-color: rgba(66, 66, 66, 0.15);
-            width: 450px;
+            background-color: rgba(66, 66, 66, 0.4);
+            width: 380px;
             height: 300px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             text-align: center;
-            padding: 20px
+            padding: 30px 50px;
         }
     }
 
@@ -364,6 +379,7 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 150px;
 
             div {
                 width: 81%;
@@ -372,7 +388,7 @@ body {
                 flex-direction: row;
                 justify-content: space-between;
 
-                input[type=text] {
+                input {
                     width: 45%;
                     padding: 10px 0px 10px 10px;
                     border: none;
@@ -446,9 +462,8 @@ body {
                 }
             }
 
-            input[type=submit] {
+            input {
                 width: 25%;
-                margin-bottom: 50px;
                 padding: 10px;
                 background-color: transparent;
                 border: 1px solid rgb(85, 85, 85);
