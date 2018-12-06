@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b93fd8be-5632-49bf-aff8-38c96ca80920" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/mail.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +43,7 @@
           <entry key="css" value="109" />
           <entry key="html" value="551" />
           <entry key="js" value="8" />
-          <entry key="php" value="92" />
+          <entry key="php" value="244" />
           <entry key="scss" value="2427" />
         </counts>
       </usages-collector>
@@ -53,7 +52,7 @@
           <entry key="CSS" value="109" />
           <entry key="HTML" value="551" />
           <entry key="JavaScript" value="8" />
-          <entry key="PHP" value="92" />
+          <entry key="PHP" value="244" />
           <entry key="SCSS" value="2427" />
         </counts>
       </usages-collector>
@@ -119,10 +118,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="568" />
-    <option name="y" value="49" />
-    <option name="width" value="1248" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="1239" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -189,7 +187,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17568000" />
+    <option name="totallyTimeSpent" value="18411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />

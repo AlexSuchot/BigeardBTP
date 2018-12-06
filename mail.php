@@ -7,20 +7,17 @@ if (isset($_POST['email']))  {
     $admin_email = "loic.vanderschooten@ynov.com";
     $email = $_POST['email'];
     $subject = "Bigeard-BTP formulaire";
-    $comment = $_POST['message'] + " " + $_POST['firstname'] + " " + $_POST['lastname'];
+    $comment = $_POST['message']." ".$_POST['firstname']." ".$_POST['lastname'];
     $rexSafety = "/[\^<,\"@\/\{\}\(\)\*\$%\?=>:\|;#]+/i";
 
     if(preg_match($rexSafety,$_POST['firstname'])){
-        echo "Wrong value for the firstname";
     }
     else{
 
     }
     if(preg_match($rexSafety,$_POST['lastname'])){
-        echo "Wrong value for the lastname";
     }
     else{
-
     }
 
     //send email
