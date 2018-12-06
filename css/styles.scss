@@ -365,6 +365,52 @@ body {
         }
     }
 
+    .about {
+        display: flex;
+        margin-bottom: 5%;
+
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+        }
+        .desc {
+            flex: 1;
+            @media screen and (max-width: 1200px) {
+                margin-left: 2%;
+                width: 95%;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                font-weight: bold;
+                color: rgb(85, 85, 85);
+            }
+            p {
+                text-align: justify;
+                width: 80%;
+                font-size: 1.1em;
+                color: rgb(85, 85, 85);
+
+                @media screen and (max-width: 700px) {
+                    margin-left: 2%;
+                    font-size: 0.9em;
+                    width: 90%;
+                }
+            }
+        }
+        img {
+            flex: 1;
+            width: 25%;
+            height: 25%;
+            margin: auto;
+
+            @media screen and (max-width: 700px) {
+                width: 75%;
+                height: 75%;
+            }
+        }
+
+    }
+
     .form {
         display: flex;
         flex-direction: column;
