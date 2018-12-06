@@ -385,9 +385,15 @@ body {
 
 @media screen and (max-width: 700px) {
   .global-container .carousel #hide-prev {
-    width: 50%;
+    width: 25%;
     -webkit-transform: translateY(125%);
             transform: translateY(125%);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .global-container .carousel #hide-prev {
+    width: 50%;
   }
 }
 
@@ -404,9 +410,15 @@ body {
 
 @media screen and (max-width: 700px) {
   .global-container .carousel #prev {
-    width: 75%;
+    width: 50%;
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .global-container .carousel #prev {
+    width: 75%;
   }
 }
 
@@ -420,6 +432,12 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+  .global-container .carousel #selected {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
   .global-container .carousel #selected {
     width: 100%;
   }
@@ -438,9 +456,15 @@ body {
 
 @media screen and (max-width: 700px) {
   .global-container .carousel #next {
-    width: 75%;
+    width: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .global-container .carousel #next {
+    width: 75%;
   }
 }
 
@@ -458,9 +482,15 @@ body {
 
 @media screen and (max-width: 700px) {
   .global-container .carousel #hide-next {
-    width: 50%;
+    width: 25%;
     -webkit-transform: translateY(-125%);
             transform: translateY(-125%);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .global-container .carousel #hide-next {
+    width: 50%;
   }
 }
 
